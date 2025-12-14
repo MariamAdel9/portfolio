@@ -1,0 +1,49 @@
+<header>
+  <div class="navBar-main">
+    <div class="logo">Mariam – Portfolio</div>
+    <nav>
+      <ul>
+        <li
+          (click)="onClick('top')"
+          [class.selectedHover]="selected() == 'top'"
+        >
+          Home
+        </li>
+        <li
+          (click)="onClick('skills')"
+          [class.selectedHover]="selected() == 'skills'"
+        >
+          Skills
+        </li>
+        <li
+          (click)="onClick('experience')"
+          [class.selectedHover]="selected() == 'experience'"
+        >
+          Experience
+        </li>
+        <li
+          (click)="onClick('projects')"
+          [class.selectedHover]="selected() == 'projects'"
+        >
+          Projects
+        </li>
+
+          <li
+          (click)="onClick('certifications')"
+          [class.selectedHover]="selected() == 'certifications'"
+        >
+          Education & Certifications
+        </li>
+
+         <li
+          (click)="onClick('contact')"
+          [class.selectedHover]="selected() == 'contact'"
+        >
+          Contact
+        </li>
+      </ul>
+
+
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,53 @@
+.body {
+  margin: unset;
+  padding: unset;
+  min-width: 100%;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  display: block;
+}
+.main-container {
+  margin: 7rem 10rem;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    margin: 11rem 3rem !important;
+  }
+}
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  font-size: 14px;
+  color: var(--text-main);
+  justify-content: center;
+  font-size: clamp(12px, 2vw, 17px);
+  letter-spacing: 2px;
+}
+.contact-info span,
+.contact-info a {
+  background: var(--card-bg);
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.contact-info a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  color: var(--accent);
+}
+
+.contact-info span {
+  cursor: default;
+}

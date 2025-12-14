@@ -1,0 +1,55 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2%;
+  justify-items: center;
+  align-items: center;
+  align-content: space-evenly;
+  align-items: stretch;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.127);
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  transition: transform 0.12s ease, box-shadow 0.12s ease,
+    border-color 0.12s ease;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.056);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+
+.project-summary {
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+.project-title {
+  color: var(--text-main);
+  font-family: var(--main-font);
+  font-size: clamp(15px, 2vw, 25px);
+  margin: 10px 0px;
+  font-weight: 700;
+}
+
+.project-desc {
+  width: 100%;
+  max-height: 250px; /* choose any fixed height */
+  object-fit: cover; /* crop instead of stretching */
+  border-radius: 14px; /* match your card rounding */
+  display: block;
+}
+
+.project-period {
+  margin: 20px;
+  text-align: center;
+}

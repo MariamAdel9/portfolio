@@ -1,0 +1,21 @@
+.skill-div {
+  border: 1px solid rgba(42, 35, 79, 0.214);
+  background: linear-gradient(
+    145deg,
+    rgba(243, 220, 255, 0.538),
+    rgba(166, 214, 250, 0.395)
+  );
+  padding: 9px 20px;
+  border-radius: 100px;
+  font-size: clamp(8px, 2vw, 13px);
+  letter-spacing: 2px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.skills-contanier {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,21 @@
+.main-section {
+  font-family: var(--main-font);
+}
+
+.desc-section {
+  font-family: var(--sub-font);
+  color: var(--muted);
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+h1,
+p {
+  padding: 0px;
+  margin: 0px;
+}
