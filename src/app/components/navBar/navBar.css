@@ -37,3 +37,15 @@ a {
 ul {
   flex-wrap: wrap;
 }
+
+@media (max-width: 800px) {
+  .navBar-main {
+    justify-content: start !important;
+    height: 8% !important;
+    font-size: 12px;
+  }
+
+  .navBar-main ul {
+    display: none !important;
+  }
+}

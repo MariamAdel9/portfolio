@@ -13,9 +13,12 @@
 
 @media (max-width: 800px) {
   .main-container {
-    margin: 11rem 3rem !important;
-  }
+
+        margin: 4rem 3rem !important;
+    }
 }
+  
+
 .contact-info {
   margin-top: 20px;
   display: flex;
