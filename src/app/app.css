@@ -13,11 +13,13 @@
 
 @media (max-width: 800px) {
   .main-container {
+    margin: 4rem 3rem !important;
+  }
 
-        margin: 4rem 3rem !important;
-    }
+  #certifications {
+    margin-top: 3rem !important;
+  }
 }
-  
 
 .contact-info {
   margin-top: 20px;
