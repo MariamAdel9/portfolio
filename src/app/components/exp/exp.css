@@ -75,7 +75,6 @@
   line-height: 1.6;
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
   .exp-item {
     width: 100%;

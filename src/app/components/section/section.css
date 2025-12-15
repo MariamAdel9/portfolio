@@ -19,3 +19,9 @@ p {
   padding: 0px;
   margin: 0px;
 }
+
+@media (max-width: 900px) {
+  .main-section {
+    margin-top: 8%;
+  }
+}
