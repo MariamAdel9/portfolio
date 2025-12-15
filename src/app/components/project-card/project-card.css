@@ -3,8 +3,6 @@
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 2%;
   justify-items: center;
-  align-items: center;
-  align-content: space-evenly;
   align-items: stretch;
 }
 
@@ -15,17 +13,23 @@
   padding: 20px;
   border-radius: 18px;
   border: 1px solid var(--border);
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.12s ease, box-shadow 0.12s ease,
     border-color 0.12s ease;
-  overflow: scroll;
-  scrollbar-width: none; /* Firefox */
 }
 
-img {
+.project-pic img {
   max-width: 100%;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.056);
   border-radius: 18px;
   border: 1px solid var(--border);
+}
+
+.card-content {
+  flex: 1;
 }
 
 .project-summary {
@@ -43,13 +47,15 @@ img {
 
 .project-desc {
   width: 100%;
-  max-height: 250px; /* choose any fixed height */
-  object-fit: cover; /* crop instead of stretching */
-  border-radius: 14px; /* match your card rounding */
-  display: block;
+  margin-bottom: 14px;
+  color: var(--text-main);
+  line-height: 1.4;
+  font-size: 14px;
 }
 
 .project-period {
-  margin: 20px;
+  margin-top: 20px;
   text-align: center;
+  font-size: 14px;
+  color: var(--muted);
 }

@@ -1,18 +1,19 @@
 <div class="card-container">
   <article class="project-card" *ngFor="let p of projectList">
+    
     <div class="project-pic">
       <img [src]="p.image" />
     </div>
 
-    <div class="project-summary">{{ p.summary }}</div>
-    <div class="project-title">{{ p.title }}</div>
-
-    <div class="project-desc">
-      {{ p.desc }}
+    <div class="card-content">
+      <div class="project-summary">{{ p.summary }}</div>
+      <div class="project-title">{{ p.title }}</div>
+      <div class="project-desc">{{ p.desc }}</div>
     </div>
 
     <div class="project-period">
-      <span>{{ p.period }}</span>
+      <p>{{ p.period }}</p>
     </div>
+
   </article>
 </div>

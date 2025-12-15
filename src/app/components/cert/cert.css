@@ -1,20 +1,26 @@
 .certName {
   font-family: var(--main-font);
-  font-size: clamp(10px, 2vw, 18px);
+  font-size: clamp(14px, 2vw, 18px);
   font-weight: 700;
 }
 
-.certInfo{
+.certInfo {
   font-family: var(--sub-font);
-  font-size: clamp(10px, 2vw, 16px);
+  font-size: clamp(12px, 2vw, 16px);
   color: var(--muted);
   letter-spacing: 1px;
 }
 
-section{
+section {
   border-bottom: 1px solid var(--border);
 }
 
-.certContainer{
+.certContainer {
   margin: 20px;
+}
+
+@media (max-width: 800px) {
+  .certContainer {
+    margin: 10px;
+  }
 }

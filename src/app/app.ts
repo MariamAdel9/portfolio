@@ -26,11 +26,14 @@ import { Experence } from './components/exp/exp';
   styleUrl: './app.css',
 })
 export class App {
-
   onNavigate(section: string) {
     const element = document.getElementById(section);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  callPhone() {
+    window.location.href = 'tel:66600885';
   }
 }
